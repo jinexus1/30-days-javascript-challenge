@@ -23,3 +23,14 @@ function removeLastListElement() {
     ul.removeChild(ul.lastElementChild);
   }
 }
+//changing the attribute of img to a
+function changeAttributes() {
+  // Change the src attribute of the image
+  let img = document.getElementById("myDog");
+  img.setAttribute("src", "new_image.jpg");
+
+  // Change the href attribute of the link
+  let link = document.getElementById("myLink");
+  link.setAttribute("href", "https://newsite.com");
+  link.textContent = "New Website";
+}
