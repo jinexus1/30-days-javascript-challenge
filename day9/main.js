@@ -23,23 +23,34 @@ function removeLastListElement() {
     ul.removeChild(ul.lastElementChild);
   }
 }
-//changing the attribute of img to a
+
 function changeAttributes() {
-  // Change the src attribute of the image
   let img = document.getElementById("myDog");
   img.setAttribute("src", "new_image.jpg");
 
-  // Change the href attribute of the link
   let link = document.getElementById("myLink");
   link.setAttribute("href", "https://newsite.com");
   link.textContent = "New Website";
 }
 
-function addClass(){
-  let element=document.getElementById('myElement')
-  element.classList.add('highlight')
+function addClass() {
+  let element = document.getElementById("myEle");
+  element.classList.add("highlight");
 }
-function removeClass(){
-  let element=document.getElementById('myElement')
-  element.classList.remove('highlight')
+
+function removeClass() {
+  let element = document.getElementById("myEle");
+  element.classList.remove("highlight");
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  let element = document.getElementById("myEle");
+
+  element.addEventListener("mouseover", function () {
+    element.style.border = "2px solid red";
+  });
+
+  element.addEventListener("mouseout", function () {
+    element.style.border = "2px solid black";
+  });
+});
