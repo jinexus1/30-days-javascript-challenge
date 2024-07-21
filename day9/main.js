@@ -34,3 +34,12 @@ function changeAttributes() {
   link.setAttribute("href", "https://newsite.com");
   link.textContent = "New Website";
 }
+
+function addClass(){
+  let element=document.getElementById('myElement')
+  element.classList.add('highlight')
+}
+function removeClass(){
+  let element=document.getElementById('myElement')
+  element.classList.remove('highlight')
+}
