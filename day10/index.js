@@ -30,3 +30,17 @@ const outputParagraph = document.getElementById("outputParagraph");
 inputField.addEventListener("keyup", function () {
   outputParagraph.textContent = "Current value: " + inputField1.value;
 });
+
+const form = document.getElementById("myForm");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault(); // prevent default form submission
+  const formData = new FormData(form);
+  console.log(formData); // log form data to console
+  // you can also convert formData to an object and log that instead
+  const formDataObject = {};
+  for (const [key, value] of formData) {
+    formDataObject[key] = value;
+  }
+  console.log(formDataObject);
+});
