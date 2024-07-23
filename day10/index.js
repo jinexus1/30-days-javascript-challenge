@@ -44,3 +44,10 @@ form.addEventListener("submit", (e) => {
   }
   console.log(formDataObject);
 });
+
+const select=document.getElementById('mySelect')
+const paragraph1=document.getElementById('selectedValue')
+select.addEventListener("change", () => {
+  const selectedValue = select.value;
+  paragraph1.textContent = `You selected: ${selectedValue}`;
+});
