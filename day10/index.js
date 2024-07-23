@@ -24,3 +24,9 @@ const inputField = document.getElementById("inputField");
 inputField.addEventListener("keydown", function (event) {
   console.log("Key pressed:", event.key);
 });
+const inputField1 = document.getElementById("inputField");
+const outputParagraph = document.getElementById("outputParagraph");
+
+inputField.addEventListener("keyup", function () {
+  outputParagraph.textContent = "Current value: " + inputField1.value;
+});
