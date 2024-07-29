@@ -20,6 +20,6 @@ const myPromise1 = new Promise((resolve, reject) => {
 myPromise1.catch(error => {
   console.error(error.message);
 });
-myPromise1.catch((error) => {
+//myPromise1.catch((error) => {
 //   console.error(error.message);
 // });
